@@ -1,14 +1,16 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+
+import {Statuses} from "@utils/enums"
+import * as C from "@utils/constants"
+
+const dupxo = (val: number): string => val === Statuses.Accepted ? 'DUPXO' : 'Nie DUPXO' 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Dupxo <code>src/App.tsx</code> and save to reload.
+         <span style={{fontSize: "25rem"}}> {dupxo(2)}</span> <code>src/App.tsx</code> and save to reload.
         </p>
         <a
           className="App-link"
