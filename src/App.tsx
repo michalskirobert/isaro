@@ -1,7 +1,6 @@
 import React from "react";
 
 import {Statuses} from "@utils/enums"
-import * as C from "@utils/constants"
 
 const dupxo = (val: number): string => val === Statuses.Accepted ? 'DUPXO' : 'Nie DUPXO' 
 

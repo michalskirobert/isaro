@@ -7,7 +7,8 @@
       "@actions/*": ["./src/store/actions/*"],
       "@assets/*": ["./src/assets/*"],
       "@pages/*": ["./src/pages/*"],
-      "@namespace/*": ["src/core/types/*"],
+      "@store/*": ["./src/store"],
+      "@namespace/*": ["src/core/namespaces/*"],
       "@helpers/*": ["src/helpers/*"]
     }
   },
