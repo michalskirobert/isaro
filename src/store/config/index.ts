@@ -15,8 +15,6 @@ const rootReducer = combineReducers({
 
 const isDevelopment = process.env.REACT_APP_IS_DEV;
 
-console.log(isDevelopment ? "Developing - SARO - Magda <3" : "Prod")
-
 const baseUrl = document.getElementsByTagName("base")[0].getAttribute("href");
 
 // export const history = createBrowserHistory({ window: baseUrl });
