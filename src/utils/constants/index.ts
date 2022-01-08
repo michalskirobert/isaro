@@ -1,14 +1,13 @@
 //Dashboard
-export const DUPXO = 'dupxo'
 
 export const DASHBOARD = {
-    HOME: "Home",
-    ROUTE: "/",
-    TOOLTIP: "TOOLTIP NAWIGACIJ"
-}    
+  HOME: "Home",
+  ROUTE: "/",
+  TOOLTIP: "TOOLTIP NAWIGACIJ",
+};
 
 export const EVENTS = {
-    ROUTE: "/events",
-    EVENTS: "Events",
-    TOOLTIP: "Tooltip do eventa xoxox",
-}
+  ROUTE: "/events",
+  EVENTS: "Events",
+  TOOLTIP: "Tooltip do eventa xoxox",
+};
