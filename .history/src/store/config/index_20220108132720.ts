@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware, combineReducers } from "redux";
 import thunk from "redux-thunk";
 
-// import { reducer as oidc } from "@axa-fr/react-oidc-redux";
+import { reducer as oidc } from "@axa-fr/react-oidc-redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 import * as reducers from "../reducers";
