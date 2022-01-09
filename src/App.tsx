@@ -1,7 +1,20 @@
-import React from "react";
+import { Suspense } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Navigator } from "./Navigator";
+import { nav } from "./routes";
 
-const App = () => <Navigator />;
+const App = (): JSX.Element => (
+  <BrowserRouter>
+    <Suspense fallback={() => <p>Loading...</p>}>
+      <Routes>
+        <Route path="/">
+          {nav.map(({ element, path, index }) => (
+            <Route key={path} {...{ element, path, index }} />
+          ))}
+        </Route>
+      </Routes>
+    </Suspense>
+  </BrowserRouter>
+);
 
-export default App;
+export { App as default };
